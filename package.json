@@ -1,0 +1,30 @@
+{
+  "name": "rubocop",
+  "main": "./lib/rubocop",
+  "version": "0.0.1",
+  "description": "A short description of your package",
+  "activationCommands": {
+    "atom-text-editor": "rubocop:autocorrect-current-file"
+  },
+  "repository": "https://github.com/asux/atom-rubocop",
+  "license": "MIT",
+  "author": {
+    "name": "Alex Ulianytsky",
+    "email": "a.ulyanitsky@gmail.com",
+    "url": "https://github.com/asux"
+  },
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "keywords": [
+    "ruby",
+    "rubocop",
+    "code",
+    "beautify",
+    "beautifier",
+    "styleguides",
+    "autocorrection"
+  ]
+}
