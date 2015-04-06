@@ -2,7 +2,7 @@
   "name": "rubocop",
   "main": "./lib/rubocop",
   "version": "0.0.1",
-  "description": "A short description of your package",
+  "description": "Rubocop package for Atom editor",
   "activationCommands": {
     "atom-text-editor": "rubocop:autocorrect-current-file"
   },
