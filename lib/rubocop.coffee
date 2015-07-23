@@ -23,7 +23,7 @@ module.exports = Rubocop =
   serialize: ->
 
   isRubyFile: (filePath) ->
-    atom.workspace.getActiveTextEditor().getGrammar().scopeName == 'source.ruby'
+    atom.workspace.getActiveTextEditor().getGrammar().scopeName.includes('ruby')
 
   autocorrectCurrentFile: ->
     editor = atom.workspace.getActivePaneItem()
