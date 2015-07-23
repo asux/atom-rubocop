@@ -7,10 +7,6 @@ module.exports = Rubocop =
       title: 'Rubocop command'
       type: 'string'
       default: 'rubocop'
-    additionalRubyFiles:
-      title: 'Additional Ruby files'
-      type: 'array'
-      default: ['Gemfile', 'Rakefile', 'Guardfile']
 
   subscriptions: null
 
@@ -27,8 +23,7 @@ module.exports = Rubocop =
   serialize: ->
 
   isRubyFile: (filePath) ->
-    atom.config.get('rubocop.additionalRubyFiles').indexOf(path.basename(filePath)) > -1 or
-      path.extname(filePath) == '.rb'
+    atom.workspace.getActiveTextEditor().getGrammar().scopeName == 'source.ruby'
 
   autocorrectCurrentFile: ->
     editor = atom.workspace.getActivePaneItem()
